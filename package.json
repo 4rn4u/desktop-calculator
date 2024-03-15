@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "repository": {
     "type": "git",
@@ -15,8 +17,28 @@
   "bugs": {
     "url": "https://github.com/4rn4u/desktop-calculator/issues"
   },
+  "build": {
+    "appId": "4rn4u's Calculator",
+    "productName": "simpleCalc",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "./assets/icon.png"
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "icon": "./assets/icon.png"
+    }
+  },
   "homepage": "https://github.com/4rn4u/desktop-calculator#readme",
   "devDependencies": {
-    "electron": "^29.1.4"
+    "electron": "^29.1.4",
+    "electron-builder": "^24.13.3"
   }
 }
