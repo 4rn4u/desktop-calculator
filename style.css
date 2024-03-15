@@ -9,7 +9,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #dbaa4f;
+    background: #ffffff;
 }
 
 .container {
@@ -57,4 +57,5 @@ body {
 
 .operator {
     color: #c49b15;
+    font-weight: bold;
 }

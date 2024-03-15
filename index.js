@@ -1,15 +1,15 @@
 const { app, BrowserWindow } = require('electron');
-const path = require('assets\icon.png');
+const path = require('path');
 
 function createWindow () {
   // Create the browser window.
   const win = new BrowserWindow({
-    width: 325,
-    height: 410,
+    width: 315,
+    height: 420,
     webPreferences: {
       nodeIntegration: true
     },
-    icon: path.join(__dirname, 'assets\icon.png'),
+    icon: path.join(__dirname, './assets/icon.png'),
     resizable: false,
     maximizable: false,
   });
